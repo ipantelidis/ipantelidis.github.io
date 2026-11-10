@@ -11,24 +11,27 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header wrap">
     <a class="site-name" href="#about" data-field="name">Ippokratis Pantelidis</a>
     <nav class="site-nav" aria-label="Sections">
       <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
+      <a href="#research" data-mode="work">Research</a>
+      <a href="#publications" data-mode="work">Publications</a>
+      <a href="#experience" data-mode="work">Experience</a>
+      <a href="#education" data-mode="work">Education</a>
+      <a href="#life" data-mode="life" hidden>Life</a>
       <a href="#contact">Contact</a>
     </nav>
-    <!-- Work / Life toggle is added in Phase 2 -->
+    <div class="mode-toggle" role="group" aria-label="Show work or life sections" data-mode-toggle hidden>
+      <button type="button" data-mode-btn="work" aria-pressed="true">Work</button>
+      <button type="button" data-mode-btn="life" aria-pressed="false">Life</button>
+    </div>
   </header>
 
-  <main id="main">
+  <main id="main" class="wrap">
     <section id="about" class="section hero">
-      <div class="hero-portrait">
-        <!-- Portrait is inserted by render.js when files.portrait is set -->
-      </div>
+      <!-- Portrait is inserted by render.js when files.portrait is set; keep this div empty -->
+      <div class="hero-portrait"></div>
       <div class="hero-text">
         <h1 data-field="name">Ippokratis Pantelidis</h1>
         <p class="role" data-field="role_line">MSc AI student at the University of Amsterdam</p>
@@ -44,7 +47,7 @@
       </div>
     </section>
 
-    <div class="work-only">
+    <div class="work-only" data-mode-panel="work">
       <section id="research" class="section">
         <h2>Research</h2>
         <p data-field="research.interests_paragraph">[RESEARCH_INTERESTS_PARAGRAPH]</p>
@@ -67,7 +70,7 @@
       </section>
     </div>
 
-    <div class="life-only" hidden>
+    <div class="life-only" data-mode-panel="life" hidden>
       <section id="life" class="section">
         <h2>Life</h2>
         <p data-field="life.intro">[LIFE_INTRO]</p>
@@ -91,7 +94,7 @@
     </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="site-footer wrap">
     <p><span data-field="name">Ippokratis Pantelidis</span> · <span data-field="footer.year">2026</span> · <a href="https://github.com/ipantelidis/ipantelidis.github.io" data-field-href="footer.repo_url">Source</a></p>
   </footer>
 

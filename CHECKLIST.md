@@ -19,10 +19,13 @@ Open placeholders and TODOs. Updated at the end of every phase.
 - [ ] Accent color: terracotta #c2410c chosen to match Fraunces; swap in css/style.css if wanted
 - [ ] Fraunces: switch to Source Serif 4 if it feels like too much
 
+## Verification pending
+- [ ] Visual check of Phase 2 header, toggle and hero in a browser (no browser on the cluster)
+
 ## Phase status
 - [x] Phase 0, discovery
 - [x] Phase 1, scaffold
-- [ ] Phase 2, design system
+- [x] Phase 2, design system
 - [ ] Phase 3, sections
 - [ ] Phase 4, motion
 - [ ] Phase 5, polish

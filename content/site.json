@@ -1,0 +1,64 @@
+{
+  "name": "Ippokratis Pantelidis",
+  "name_on_papers": "Ippokratis Pantelidis",
+  "github_username": "ipantelidis",
+  "site_url": "https://ipantelidis.github.io",
+  "custom_domain": null,
+  "role_line": "MSc AI student at the University of Amsterdam",
+  "role_line_secondary": "Researcher in Physical AI, World Models and Information Retrieval",
+  "institution": "University of Amsterdam",
+  "city": "[CITY]",
+  "hometown": "[HOMETOWN]",
+  "sections": ["about", "research", "publications", "experience", "education", "life", "contact"],
+  "links": {
+    "email": "ippokratispantelidis@gmail.com",
+    "cv_pdf": null,
+    "scholar": "https://scholar.google.com/citations?user=axQx4zUAAAAJ&hl=en",
+    "github": "https://github.com/ipantelidis",
+    "linkedin": "https://www.linkedin.com/in/ippokratis-pantelidis/"
+  },
+  "files": {
+    "portrait": null,
+    "cv_pdf": null
+  },
+  "design": {
+    "heading_font": "Fraunces",
+    "body_font": "system sans stack",
+    "accent": "#c2410c",
+    "accent_name": "terracotta",
+    "dark_mode": false
+  },
+  "motion": {
+    "spawn_point_line": false,
+    "explored_dots": false,
+    "loading_reveal": false,
+    "ambient_background": false
+  },
+  "about": {
+    "bio_paragraph_1": "[BIO_PARAGRAPH_1]",
+    "bio_paragraph_2": "[BIO_PARAGRAPH_2]"
+  },
+  "research": {
+    "interests_paragraph": "[RESEARCH_INTERESTS_PARAGRAPH]",
+    "directions": [],
+    "projects": []
+  },
+  "experience": {
+    "include_teaching_and_part_time": null,
+    "entries": []
+  },
+  "education": [],
+  "life": {
+    "intro": "[LIFE_INTRO]",
+    "interests": [],
+    "places_lived": [],
+    "photos": []
+  },
+  "contact": {
+    "open_to": "[OPEN_TO]"
+  },
+  "footer": {
+    "year": 2026,
+    "repo_url": "https://github.com/ipantelidis/ipantelidis.github.io"
+  }
+}

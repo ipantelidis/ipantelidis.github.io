@@ -7,9 +7,17 @@
   "role_line": "MSc AI student at the University of Amsterdam",
   "role_line_secondary": "Researcher in Physical AI, World Models and Information Retrieval",
   "institution": "University of Amsterdam",
-  "city": "[CITY]",
-  "hometown": "[HOMETOWN]",
-  "sections": ["about", "research", "publications", "experience", "education", "life", "contact"],
+  "city": "Amsterdam",
+  "hometown": "Athens",
+  "sections": [
+    "about",
+    "research",
+    "publications",
+    "experience",
+    "education",
+    "life",
+    "contact"
+  ],
   "links": {
     "email": "ippokratispantelidis@gmail.com",
     "cv_pdf": null,
@@ -44,8 +52,9 @@
     "projects": []
   },
   "experience": {
-    "include_teaching_and_part_time": null,
-    "entries": []
+    "include_teaching_and_part_time": true,
+    "entries": [],
+    "note": "Include teaching assistant roles. Research positions to be decided per entry."
   },
   "education": [],
   "life": {

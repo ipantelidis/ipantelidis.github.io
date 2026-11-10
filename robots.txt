@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ipantelidis.github.io/sitemap.xml

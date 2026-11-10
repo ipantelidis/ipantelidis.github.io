@@ -96,17 +96,30 @@
   var LINK_LABELS = [['paper', 'Paper'], ['code', 'Code'], ['project', 'Project page'],
                      ['bibtex', 'BibTeX'], ['video', 'Video'], ['poster', 'Poster']];
 
-  function pubLinks(pub) {
+  function bracket(row, node, first) {
+    if (!first) row.appendChild(document.createTextNode(' '));
+    row.appendChild(document.createTextNode('['));
+    row.appendChild(node);
+    row.appendChild(document.createTextNode(']'));
+  }
+
+  function pubLinks(pub, bibBox) {
     var L = pub.links || {};
     var row = el('p', { 'class': 'pub-links small' });
     var any = false;
     LINK_LABELS.forEach(function (pair) {
+      if (pair[0] === 'bibtex' && pub.bibtex && bibBox) {
+        var btn = el('button', { type: 'button', 'class': 'link-btn', text: 'BibTeX', 'aria-expanded': 'false', 'aria-controls': bibBox.getAttribute('id') });
+        btn.addEventListener('click', function () {
+          var open = bibBox.hidden;
+          bibBox.hidden = !open;
+          btn.setAttribute('aria-expanded', String(open));
+        });
+        bracket(row, btn, !any); any = true;
+        return;
+      }
       if (!L[pair[0]]) return;
-      if (any) row.appendChild(document.createTextNode(' '));
-      row.appendChild(document.createTextNode('['));
-      row.appendChild(el('a', { href: L[pair[0]], text: pair[1] }));
-      row.appendChild(document.createTextNode(']'));
-      any = true;
+      bracket(row, el('a', { href: L[pair[0]], text: pair[1] }), !any); any = true;
     });
     return any ? row : null;
   }
@@ -125,9 +138,15 @@
     body.appendChild(title);
     body.appendChild(el('p', { 'class': 'pub-authors' }, [authorsNode(pub)]));
     body.appendChild(el('p', { 'class': 'pub-venue' }, [el('em', { text: pub.venue }), document.createTextNode(', ' + pub.year)]));
-    var links = pubLinks(pub);
+    var bibBox = null;
+    if (pub.bibtex) {
+      bibBox = el('pre', { 'class': 'pub-bibtex small', id: 'bib-' + pub.id, tabindex: '0', text: pub.bibtex });
+      bibBox.hidden = true;
+    }
+    var links = pubLinks(pub, bibBox);
     if (links) body.appendChild(links);
     if (pub.summary) body.appendChild(el('p', { 'class': 'pub-summary', text: pub.summary }));
+    if (bibBox) body.appendChild(bibBox);
     row.appendChild(body);
     return row;
   }

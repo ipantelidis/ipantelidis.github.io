@@ -2,43 +2,97 @@
   {
     "id": "punzo2026physics",
     "title": "How Do Video Foundation Models Encode Intuitive Physics? Probing Across Pretraining Paradigms",
-    "authors": ["S. Punzo", "N. Caselli", "Ippokratis Pantelidis", "F. Massafra", "S. Lo Sardo", "M. Salehi"],
+    "authors": [
+      "Samuele Punzo",
+      "Niccolò Caselli",
+      "Ippokratis Pantelidis",
+      "Francesco Massafra",
+      "Salvatore Lo Sardo",
+      "Mohammadreza Salehi"
+    ],
     "me": 2,
-    "equal_contribution": [],
-    "venue": "NeurIPS 2026 Workshop on World Models and Physical AI (poster)",
+    "equal_contribution": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "venue": "NeurIPS 2026 Workshop on World Models in Physical AI (poster)",
     "year": 2026,
     "type": "workshop",
-    "links": { "paper": null, "code": null, "project": null, "bibtex": null, "video": null, "poster": null },
+    "links": {
+      "paper": null,
+      "code": "https://github.com/ipantelidis/Probe4Physics",
+      "project": null,
+      "bibtex": null,
+      "video": null,
+      "poster": null
+    },
     "thumbnail": null,
-    "summary": "[SUMMARY]",
-    "highlight": true
+    "summary": "Probes whether physical plausibility is decodable from frozen video foundation model features (V-JEPA, VideoMAE, LTX-Video) using linear, MLP and attentive probes on Minimal Video Pairs and IntPhys2.",
+    "highlight": true,
+    "bibtex": "@inproceedings{punzo2026probe4physics,\n  title = {How Do Video Foundation Models Encode Intuitive Physics? Probing Across Pretraining Paradigms},\n  author = {Punzo, Samuele and Caselli, Niccolò and Pantelidis, Ippokratis and Massafra, Francesco and Lo Sardo, Salvatore and Salehi, Mohammadreza},\n  booktitle = {NeurIPS 2026 Workshop on World Models in Physical AI},\n  year = {2026}\n}"
   },
   {
     "id": "caselli2026mindthegap",
     "title": "Mind the Gap: Promises and Pitfalls of Hierarchical Planning in LeWorldModel",
-    "authors": ["N. Caselli", "F. Massafra", "S. Punzo", "S. Lo Sardo", "Ippokratis Pantelidis", "S. K. Bhethanabhotla"],
+    "authors": [
+      "Niccolò Caselli",
+      "Francesco Massafra",
+      "Samuele Punzo",
+      "Salvatore Lo Sardo",
+      "Ippokratis Pantelidis",
+      "Sathya Kamesh Bhethanabhotla"
+    ],
     "me": 4,
     "equal_contribution": [],
     "venue": "NeurIPS 2026 Workshop on Pretrained Agents, and Workshop on World Models at Chicago Booth 2026",
     "year": 2026,
     "type": "workshop",
-    "links": { "paper": null, "code": null, "project": null, "bibtex": null, "video": null, "poster": null },
+    "links": {
+      "paper": "https://openreview.net/forum?id=2vw6vIV0qC",
+      "code": "https://github.com/ipantelidis/Hi-LeWM",
+      "project": "https://hi-lewm.netlify.app/",
+      "bibtex": null,
+      "video": null,
+      "poster": null
+    },
     "thumbnail": null,
-    "summary": "[SUMMARY]",
-    "highlight": true
+    "summary": "Adds a high-level macro-action planner to LeWorldModel and shows that naive hierarchy can underperform flat planning; constraining the search to macro-actions seen in training makes hierarchy useful at longer horizons.",
+    "highlight": true,
+    "bibtex": "@misc{caselli2026mindgap,\n  title = {Mind the Gap: Promises and Pitfalls of Hierarchical Planning in LeWorldModel},\n  author = {Caselli, Niccolo and Lo Sardo, Salvatore and Massafra, Francesco and Pantelidis, Ippokratis and Punzo, Samuele and Bhethanabhotla, Sathya Kamesh},\n  year = {2026}\n}"
   },
   {
     "id": "chatzipapadopoulou2025imageclef",
     "title": "AUEB NLP Group at ImageCLEFmedical Caption 2025",
-    "authors": ["A. Chatzipapadopoulou", "Ippokratis Pantelidis", "F. Charalampakos", "M. Samprovalaki", "G. Moschovis", "P. Kaliosis", "K. V. Dalakleidi", "J. Pavlopoulos", "I. Androutsopoulos"],
+    "authors": [
+      "A. Chatzipapadopoulou",
+      "Ippokratis Pantelidis",
+      "F. Charalampakos",
+      "M. Samprovalaki",
+      "G. Moschovis",
+      "P. Kaliosis",
+      "K. V. Dalakleidi",
+      "J. Pavlopoulos",
+      "I. Androutsopoulos"
+    ],
     "me": 1,
     "equal_contribution": [],
     "venue": "CLEF 2025 Working Notes, CEUR Workshop Proceedings, Madrid",
     "year": 2025,
     "type": "workshop",
-    "links": { "paper": null, "code": null, "project": null, "bibtex": null, "video": null, "poster": null },
+    "links": {
+      "paper": null,
+      "code": null,
+      "project": null,
+      "bibtex": null,
+      "video": null,
+      "poster": null
+    },
     "thumbnail": null,
     "summary": "The team's approach to the ImageCLEFmedical Caption 2025 challenge, placing 1st in Concept Detection, 1st in Explainability and 5th in Caption Prediction.",
-    "highlight": true
+    "highlight": true,
+    "bibtex": null
   }
 ]

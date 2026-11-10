@@ -9,15 +9,15 @@ Open placeholders and TODOs. Updated at the end of every phase.
 - After editing content/site.json run `python3 tools/sync_static.py` to update the no-JS text in index.html
 
 ## Publications (content/publications.json)
-- [ ] punzo2026physics: summary sentence, paper URL
-- [ ] caselli2026mindthegap: summary sentence, paper URL
-- [ ] chatzipapadopoulou2025imageclef: paper URL
-- [ ] Thumbnails for the three papers (optional), code or project links if any
+- [ ] punzo2026physics: paper URL (none in the repo yet, OpenReview or arXiv when available)
+- [ ] caselli2026mindthegap: author order taken from the CV; the repo BibTeX lists the students alphabetically, confirm which is the paper's order. Confirm the project page https://hi-lewm.netlify.app/ is public.
+- [ ] chatzipapadopoulou2025imageclef: paper URL (CEUR-WS), BibTeX
+- [ ] Thumbnails for the three papers (optional)
 - [ ] Decide: list "Efficient Text Classification with Conformal In-Context Learning" (submitted to LREC 2026) as a preprint?
 
 ## Files to add
 - [ ] Portrait: assets/img/portrait.jpg is 800x800, 116 KB; downscale to 320x320 in Phase 5 (no image tools on the cluster)
-- [ ] CV PDF (links.cv_pdf, assets/pdf/)
+- [ ] CV PDF: copy the file to assets/pdf/cv-ippokratis.pdf (link already wired, so the CV link is dead until the file is there)
 
 ## Decisions to revisit
 - [ ] Accent color: terracotta #c2410c chosen to match Fraunces; swap in css/style.css if wanted

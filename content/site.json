@@ -18,14 +18,14 @@
   ],
   "links": {
     "email": "ippokratispantelidis@gmail.com",
-    "cv_pdf": null,
+    "cv_pdf": "assets/pdf/cv-ippokratis.pdf",
     "scholar": "https://scholar.google.com/citations?user=axQx4zUAAAAJ&hl=en",
     "github": "https://github.com/ipantelidis",
     "linkedin": "https://www.linkedin.com/in/ippokratis-pantelidis/"
   },
   "files": {
     "portrait": "portrait.jpg",
-    "cv_pdf": null
+    "cv_pdf": "cv-ippokratis.pdf"
   },
   "design": {
     "heading_font": "Fraunces",

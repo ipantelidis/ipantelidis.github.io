@@ -62,7 +62,6 @@
 
   /* Section renderers are filled in during Phase 3. */
   var renderers = {
-    research: function (site) { return null; },
     publications: function (site, pubs) { return null; },
     experience: function (site) { return null; },
     education: function (site) { return null; },

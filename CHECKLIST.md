@@ -3,8 +3,6 @@
 Open placeholders and TODOs. Updated at the end of every phase.
 
 ## Placeholders in content/site.json
-- [ ] about.bio_paragraph_2: [BSC_INSTITUTION] (confirm bachelor university; supervisors named are at AUEB)
-- [ ] research.interests_paragraph, research.directions, research.projects
 - [ ] experience.entries (teaching assistant roles included; research positions decided per entry)
 - [ ] education
 - [ ] life.intro, life.interests, life.places_lived, life.photos

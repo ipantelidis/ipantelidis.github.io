@@ -11,7 +11,6 @@
   "hometown": "Athens",
   "sections": [
     "about",
-    "research",
     "publications",
     "experience",
     "education",
@@ -44,12 +43,7 @@
   },
   "about": {
     "bio_paragraph_1": "I am an MSc Artificial Intelligence student at the University of Amsterdam with a passion for research. My thesis, in the VIS Lab, studies world models that act as action-conditioned verifiers in video games. Alongside it I work on two research projects: one examines the physical understanding of video foundation models, the other studies generative reranking in information retrieval.",
-    "bio_paragraph_2": "Before this I studied Computer Science at [BSC_INSTITUTION], where I graduated first in my class with a 9.27/10. My bachelor thesis, supervised by Ion Androutsopoulos and John Pavlopoulos, was on diagnostic captioning: generating diagnostic text from medical images."
-  },
-  "research": {
-    "interests_paragraph": "[RESEARCH_INTERESTS_PARAGRAPH]",
-    "directions": [],
-    "projects": []
+    "bio_paragraph_2": "Before this I studied Computer Science at the Athens University of Economics and Business, where I graduated first in my class with a 9.27/10. My bachelor thesis, supervised by Ion Androutsopoulos and John Pavlopoulos, was on diagnostic captioning: generating diagnostic text from medical images."
   },
   "experience": {
     "include_teaching_and_part_time": true,

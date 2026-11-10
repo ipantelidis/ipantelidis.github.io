@@ -24,6 +24,7 @@ Open placeholders and TODOs. Updated at the end of every phase.
 - [ ] Fraunces: switch to Source Serif 4 if it feels like too much
 
 ## Verification pending
+- [ ] Motion check in a browser: reduced motion off = reveal below the fold only, underline draws in on hover; reduced motion on = nothing moves
 - [ ] Visual check in a browser of header, hero, lists and contact (no browser on the cluster)
 
 ## Phase status
@@ -31,6 +32,6 @@ Open placeholders and TODOs. Updated at the end of every phase.
 - [x] Phase 1, scaffold
 - [x] Phase 2, design system
 - [x] Phase 3, sections (About, Publications, Experience, Education, Contact; Research and Life removed)
-- [ ] Phase 4, motion
+- [x] Phase 4, motion (scroll reveal, underline draw-in, thumbnail lift; no toggle or optional extras)
 - [ ] Phase 5, polish
 - [ ] Phase 6, QA

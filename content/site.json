@@ -47,10 +47,89 @@
   },
   "experience": {
     "include_teaching_and_part_time": true,
-    "entries": [],
+    "entries": [
+      {
+        "organisation": "University of Amsterdam",
+        "position": "Teaching Assistant",
+        "start": "Sep 2026",
+        "end": "Present",
+        "location": "Amsterdam, The Netherlands",
+        "description": "Teaching assistant for Computer Vision 1 (MSc AI): weekly lab sessions and support on assignments and theory.",
+        "logo": null,
+        "url": null
+      },
+      {
+        "organisation": "TNO",
+        "position": "Applied Research Intern",
+        "start": "Jun 2026",
+        "end": "Aug 2026",
+        "location": "Amsterdam, The Netherlands",
+        "description": "Object detection and classification models for large scale bridge inspection, and 3D reconstruction of bridges from multi-view imagery combining monocular depth estimation with multi-view triangulation.",
+        "logo": null,
+        "url": null
+      },
+      {
+        "organisation": "Archimedes Unit, Athena Research Center",
+        "position": "Research Intern",
+        "start": "Jun 2025",
+        "end": "Nov 2025",
+        "location": "Athens, Greece",
+        "description": "Co-authored the AUEB NLP Group paper for ImageCLEFmedical Caption 2025 with the group's Biomedical Team (1st in Concept Detection and Explainability, 5th in Caption Prediction).",
+        "logo": null,
+        "url": null
+      },
+      {
+        "organisation": "Department of Computer and Systems Sciences, Stockholm University",
+        "position": "Research Assistant",
+        "start": "Apr 2025",
+        "end": "Jul 2025",
+        "location": "Stockholm, Sweden",
+        "description": "Containerised the top models of SemEval 2025 Task 9 (Food Hazard Detection) and deployed them to the EFRA DataHub; co-authored a multi-domain evaluation of Conformal In-Context Learning submitted to LREC 2026.",
+        "logo": null,
+        "url": null
+      },
+      {
+        "organisation": "Quintessential SFT",
+        "position": "Data Scientist Intern",
+        "start": "Sep 2024",
+        "end": "Dec 2024",
+        "location": "Athens, Greece",
+        "description": "Forecasting of football time series, and a computer vision pipeline that compares Figma designs with implemented screens and explains the mismatches.",
+        "logo": null,
+        "url": null
+      }
+    ],
     "note": "Include teaching assistant roles. Research positions to be decided per entry."
   },
-  "education": [],
+  "education": [
+    {
+      "institution": "University of Amsterdam",
+      "degree": "MSc Artificial Intelligence",
+      "start": "Sep 2025",
+      "end": "Present",
+      "location": "Amsterdam, The Netherlands",
+      "focus": "Thesis in the VIS Lab on world models as action-conditioned verifiers in video games.",
+      "honours": "Grade 8.30/10 so far. Teaching assistant for Computer Vision 1; Project AI A with TNO."
+    },
+    {
+      "institution": "Athens University of Economics and Business",
+      "degree": "BSc Computer Science",
+      "start": "Oct 2021",
+      "end": "Aug 2025",
+      "location": "Athens, Greece",
+      "focus": "Thesis on diagnostic captioning, supervised by Ion Androutsopoulos and John Pavlopoulos.",
+      "honours": "Grade 9.27/10, valedictorian. Research member of the AUEB NLP Group (Biomedical Team), CS labs administrator, TechBiz 2024."
+    },
+    {
+      "institution": "Stockholm University, Department of Computer and Systems Sciences",
+      "degree": "Erasmus+ exchange",
+      "start": "Jan 2025",
+      "end": "Jun 2025",
+      "location": "Stockholm, Sweden",
+      "focus": "Research member of the EFRA project.",
+      "honours": null
+    }
+  ],
   "life": {
     "intro": "[LIFE_INTRO]",
     "interests": [],

@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "punzo2026physics",
+    "title": "How Do Video Foundation Models Encode Intuitive Physics? Probing Across Pretraining Paradigms",
+    "authors": ["S. Punzo", "N. Caselli", "Ippokratis Pantelidis", "F. Massafra", "S. Lo Sardo", "M. Salehi"],
+    "me": 2,
+    "equal_contribution": [],
+    "venue": "NeurIPS 2026 Workshop on World Models and Physical AI (poster)",
+    "year": 2026,
+    "type": "workshop",
+    "links": { "paper": null, "code": null, "project": null, "bibtex": null, "video": null, "poster": null },
+    "thumbnail": null,
+    "summary": "[SUMMARY]",
+    "highlight": true
+  },
+  {
+    "id": "caselli2026mindthegap",
+    "title": "Mind the Gap: Promises and Pitfalls of Hierarchical Planning in LeWorldModel",
+    "authors": ["N. Caselli", "F. Massafra", "S. Punzo", "S. Lo Sardo", "Ippokratis Pantelidis", "S. K. Bhethanabhotla"],
+    "me": 4,
+    "equal_contribution": [],
+    "venue": "NeurIPS 2026 Workshop on Pretrained Agents, and Workshop on World Models at Chicago Booth 2026",
+    "year": 2026,
+    "type": "workshop",
+    "links": { "paper": null, "code": null, "project": null, "bibtex": null, "video": null, "poster": null },
+    "thumbnail": null,
+    "summary": "[SUMMARY]",
+    "highlight": true
+  },
+  {
+    "id": "chatzipapadopoulou2025imageclef",
+    "title": "AUEB NLP Group at ImageCLEFmedical Caption 2025",
+    "authors": ["A. Chatzipapadopoulou", "Ippokratis Pantelidis", "F. Charalampakos", "M. Samprovalaki", "G. Moschovis", "P. Kaliosis", "K. V. Dalakleidi", "J. Pavlopoulos", "I. Androutsopoulos"],
+    "me": 1,
+    "equal_contribution": [],
+    "venue": "CLEF 2025 Working Notes, CEUR Workshop Proceedings, Madrid",
+    "year": 2025,
+    "type": "workshop",
+    "links": { "paper": null, "code": null, "project": null, "bibtex": null, "video": null, "poster": null },
+    "thumbnail": null,
+    "summary": "The team's approach to the ImageCLEFmedical Caption 2025 challenge, placing 1st in Concept Detection, 1st in Explainability and 5th in Caption Prediction.",
+    "highlight": true
+  }
+]

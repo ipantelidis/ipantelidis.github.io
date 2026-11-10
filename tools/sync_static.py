@@ -67,5 +67,23 @@ if L.get("email"):
     page = re.sub(r'<span data-render="email" data-email-obf[^>]*>.*?</span>',
                   f'<span data-render="email" data-email-obf {attrs}>{html.escape(shown)}</span>', page, flags=re.S)
 
+# JSON-LD Person schema, generated from site.json.
+same_as = [L[k] for k in ("scholar", "github", "linkedin", "x", "orcid") if L.get(k)]
+person = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": site["name"],
+    "url": site.get("site_url"),
+    "image": f'{site.get("site_url")}/assets/img/{portrait}' if portrait else None,
+    "jobTitle": site.get("role_line"),
+    "affiliation": {"@type": "Organization", "name": site["institution"]} if site.get("institution") else None,
+    "homeLocation": {"@type": "Place", "name": site["city"]} if site.get("city") else None,
+    "sameAs": same_as,
+}
+person = {k: v for k, v in person.items() if v}
+jsonld = json.dumps(person, ensure_ascii=False, indent=2).replace("</", "<\\/")
+page = re.sub(r'(<script type="application/ld\+json" data-jsonld>).*?(</script>)',
+              lambda m: m.group(1) + jsonld + m.group(2), page, flags=re.S)
+
 (ROOT / "index.html").write_text(page)
 print("index.html synced from content/site.json")

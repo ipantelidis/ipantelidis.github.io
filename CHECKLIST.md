@@ -16,7 +16,8 @@ Open placeholders and TODOs. Updated at the end of every phase.
 - [ ] Decide: list "Efficient Text Classification with Conformal In-Context Learning" (submitted to LREC 2026) as a preprint?
 
 ## Files to add
-- [ ] Portrait: assets/img/portrait.jpg is 800x800, 116 KB; downscale to 320x320 in Phase 5 (no image tools on the cluster)
+- [ ] Portrait: assets/img/portrait.jpg is 800x800, 116 KB, acceptable. Optional downscale on a laptop: `magick portrait.jpg -resize 400x400 -quality 82 portrait.jpg` (ImageMagick) or `sips -Z 400 portrait.jpg` (macOS)
+- [ ] Optional Open Graph card: convert assets/img/og-card.svg to PNG on a laptop (`rsvg-convert -w 1200 og-card.svg > og-card.png` or `magick og-card.svg og-card.png`), then point og:image and twitter:image in index.html to it and set twitter:card to summary_large_image. Until then the portrait is the preview image.
 - [ ] CV PDF: copy the file to assets/pdf/cv-ippokratis.pdf (link already wired, so the CV link is dead until the file is there)
 
 ## Decisions to revisit
@@ -33,5 +34,5 @@ Open placeholders and TODOs. Updated at the end of every phase.
 - [x] Phase 2, design system
 - [x] Phase 3, sections (About, Publications, Experience, Education, Contact; Research and Life removed)
 - [x] Phase 4, motion (scroll reveal, underline draw-in, thumbnail lift; no toggle or optional extras)
-- [ ] Phase 5, polish
+- [x] Phase 5, polish (meta, Open Graph, JSON-LD, 404, print styles, contrast and HTML checks)
 - [ ] Phase 6, QA

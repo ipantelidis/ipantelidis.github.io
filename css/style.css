@@ -368,3 +368,17 @@ main a:not(.pub-title a):hover, .link-btn:hover { background-size: 100% 1px, 100
   color: var(--text-muted);
 }
 .site-footer a { color: inherit; }
+
+/* ---------- Print ---------- */
+@media print {
+  html { font-size: 11pt; }
+  body { background: #fff; color: #000; }
+  .skip-link, .site-nav, .copy-btn, .copy-status, .link-btn, .pub-bibtex, .site-footer a { display: none !important; }
+  .js .reveal { opacity: 1 !important; transform: none !important; }
+  a { color: inherit; background: none !important; text-decoration: none; }
+  .link-row a::after { content: " (" attr(href) ")"; font-size: 0.85em; }
+  .link-row a[href^="#"]::after, .link-row a[href^="mailto"]::after { content: ""; }
+  .section { break-inside: avoid; padding-block: 1.2rem; }
+  .pub, .entry { break-inside: avoid; }
+  .hero-portrait img { width: 100px; height: 100px; }
+}

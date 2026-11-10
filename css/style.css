@@ -250,8 +250,7 @@ a:hover { color: var(--accent-strong); text-decoration-color: currentColor; }
   border-radius: 6px;
 }
 .hero-text h1 { margin-bottom: var(--s-2); }
-.role { font-size: 1.05rem; margin-bottom: var(--s-1); }
-.role-secondary { color: var(--text-muted); margin-bottom: var(--s-4); }
+.role { font-size: 1.05rem; margin-bottom: var(--s-4); }
 .link-row { color: var(--text-muted); }
 .link-row a { white-space: nowrap; }
 

@@ -3,13 +3,15 @@
 Open placeholders and TODOs. Updated at the end of every phase.
 
 ## Placeholders in content/site.json
-- [ ] about.bio_paragraph_1
-- [ ] about.bio_paragraph_2
+- [ ] about.bio_paragraph_2: [BSC_INSTITUTION] (confirm bachelor university; supervisors named are at AUEB)
 - [ ] research.interests_paragraph, research.directions, research.projects
 - [ ] experience.entries (teaching assistant roles included; research positions decided per entry)
 - [ ] education
 - [ ] life.intro, life.interests, life.places_lived, life.photos
 - [ ] contact.open_to
+
+## Workflow
+- After editing content/site.json run `python3 tools/sync_static.py` to update the no-JS text in index.html
 
 ## Files to add
 - [ ] Portrait photo (files.portrait, assets/img/)

@@ -5,7 +5,7 @@
   "site_url": "https://ipantelidis.github.io",
   "custom_domain": null,
   "role_line": "MSc AI student at the University of Amsterdam",
-  "role_line_secondary": "Researcher in Physical AI, World Models and Information Retrieval",
+  "role_line_secondary": null,
   "institution": "University of Amsterdam",
   "city": "Amsterdam",
   "hometown": "Athens",
@@ -43,8 +43,8 @@
     "ambient_background": false
   },
   "about": {
-    "bio_paragraph_1": "[BIO_PARAGRAPH_1]",
-    "bio_paragraph_2": "[BIO_PARAGRAPH_2]"
+    "bio_paragraph_1": "I am an MSc Artificial Intelligence student at the University of Amsterdam with a passion for research. My thesis, in the VIS Lab, studies world models that act as action-conditioned verifiers in video games. Alongside it I work on two research projects: one examines the physical understanding of video foundation models, the other studies generative reranking in information retrieval.",
+    "bio_paragraph_2": "Before this I studied Computer Science at [BSC_INSTITUTION], where I graduated first in my class with a 9.27/10. My bachelor thesis, supervised by Ion Androutsopoulos and John Pavlopoulos, was on diagnostic captioning: generating diagnostic text from medical images."
   },
   "research": {
     "interests_paragraph": "[RESEARCH_INTERESTS_PARAGRAPH]",

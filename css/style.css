@@ -191,39 +191,10 @@ a:hover { color: var(--accent-strong); text-decoration-color: currentColor; }
 .site-nav a:hover { color: var(--accent); }
 .site-nav a[hidden] { display: none; }
 
-/* Work / Life toggle: segmented control */
-.mode-toggle {
-  display: inline-flex;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  padding: 2px;
-  background: var(--surface);
-  font-size: var(--size-sm);
-}
-.mode-toggle button {
-  appearance: none;
-  border: 0;
-  background: transparent;
-  color: var(--text-muted);
-  font: inherit;
-  padding: var(--s-1) var(--s-3);
-  border-radius: 999px;
-  cursor: pointer;
-  line-height: 1.4;
-  transition: background var(--dur-fast) var(--ease), color var(--dur-fast) var(--ease);
-}
-.mode-toggle button:hover { color: var(--text); }
-.mode-toggle button[aria-pressed="true"] {
-  background: var(--accent);
-  color: var(--on-accent);
-}
-.mode-toggle button:focus-visible { outline-offset: 1px; }
-
 @media (max-width: 599px) {
   .site-header { padding-block: var(--s-4) var(--s-3); }
   .site-name { width: 100%; }
-  .mode-toggle { order: 1; }
-  .site-nav { order: 2; width: 100%; }
+  .site-nav { width: 100%; }
 }
 
 /* ---------- Sections ---------- */
@@ -260,7 +231,6 @@ a:hover { color: var(--accent-strong); text-decoration-color: currentColor; }
 }
 .hero-portrait:empty + .hero-text { grid-column: 1 / -1; }
 
-/* Mode wrappers */
 [hidden] { display: none !important; }
 
 /* ---------- Publications ---------- */
@@ -319,6 +289,25 @@ a:hover { color: var(--accent-strong); text-decoration-color: currentColor; }
 @media (max-width: 599px) {
   .entry { grid-template-columns: 1fr; gap: var(--s-1); }
 }
+
+/* ---------- Contact ---------- */
+.copy-btn {
+  appearance: none;
+  font: inherit;
+  font-size: var(--size-sm);
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.1em 0.5em;
+  margin-left: var(--s-1);
+  cursor: pointer;
+  vertical-align: baseline;
+  transition: color var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.copy-btn:hover { color: var(--accent); border-color: var(--accent); }
+.copy-status { margin-left: var(--s-2); }
+.copy-status:empty { display: none; }
 
 /* ---------- Footer ---------- */
 .site-footer {

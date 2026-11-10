@@ -50,14 +50,34 @@
   }
 
   function renderPortrait(site) {
-    var box = document.querySelector('.hero-portrait');
+    var box = document.querySelector('[data-portrait]');
     if (!box || !site.files || !site.files.portrait) return;
+    var src = 'assets/img/' + site.files.portrait;
+    var img = box.querySelector('img');
+    if (img && img.getAttribute('src') === src) return; /* static copy already in place */
     box.textContent = '';
-    box.appendChild(el('img', {
-      src: 'assets/img/' + site.files.portrait,
-      alt: 'Portrait of ' + site.name,
-      width: '160', height: '160', loading: 'eager', decoding: 'async'
-    }));
+    box.appendChild(el('img', { src: src, alt: 'Portrait of ' + site.name, width: '160', height: '160', decoding: 'async' }));
+  }
+
+  function emailNode(site) {
+    var email = site.links && site.links.email;
+    if (!email) return null;
+    var frag = document.createDocumentFragment();
+    frag.appendChild(el('a', { href: 'mailto:' + email, text: email }));
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      var btn = el('button', { type: 'button', 'class': 'copy-btn', text: 'Copy', 'aria-label': 'Copy email address' });
+      var status = el('span', { 'class': 'copy-status small muted', role: 'status', 'aria-live': 'polite' });
+      btn.addEventListener('click', function () {
+        navigator.clipboard.writeText(email).then(function () {
+          status.textContent = 'Copied';
+          setTimeout(function () { status.textContent = ''; }, 2000);
+        });
+      });
+      frag.appendChild(document.createTextNode(' '));
+      frag.appendChild(btn);
+      frag.appendChild(status);
+    }
+    return frag;
   }
 
   /* ---------- Section renderers ---------- */
@@ -162,8 +182,7 @@
     publications: function (site, pubs) { return renderPublications(site, pubs); },
     experience: function (site) { return renderEntries(site.experience && site.experience.entries); },
     education: function (site) { return renderEntries(site.education); },
-    life: function (site) { return null; },
-    email: function (site) { return null; }
+    email: function (site) { return emailNode(site); }
   };
 
   function renderSections(site, pubs) {

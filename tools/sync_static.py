@@ -3,17 +3,19 @@
 
 Keeps the no-JavaScript version of the page in sync with the content file.
 Run from the repo root after editing site.json:  python3 tools/sync_static.py
-Only elements with data-field="..." or data-links on a single line are touched.
+Touches: single-line data-field elements, data-links rows, data-portrait,
+data-email-obf. The plain email address and "mailto:" never appear in the HTML;
+js/render.js builds the real link at runtime.
 """
 import html
 import json
 import re
-import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 site = json.loads((ROOT / "content/site.json").read_text())
 page = (ROOT / "index.html").read_text()
+L = site.get("links") or {}
 
 
 def get(obj, path):
@@ -35,9 +37,8 @@ page = re.sub(
 
 
 def link_row():
-    L = site.get("links") or {}
     items = []
-    if L.get("email"): items.append(("Email", "mailto:" + L["email"]))
+    if L.get("email"): items.append(("Email", "#contact"))
     if L.get("cv_pdf"): items.append(("CV", L["cv_pdf"]))
     if L.get("scholar"): items.append(("Google Scholar", L["scholar"]))
     if L.get("github"): items.append(("GitHub", L["github"]))
@@ -51,6 +52,20 @@ page = re.sub(
     r'(?P<open><p class="link-row" data-links>)\s*.*?\s*(?P<close></p>)',
     lambda m: f"{m.group('open')}\n          {link_row()}\n        {m.group('close')}",
     page, flags=re.S)
+
+# Portrait, static so it shows without JavaScript.
+portrait = (site.get("files") or {}).get("portrait")
+img = (f'<img src="assets/img/{html.escape(portrait, quote=True)}" alt="Portrait of {html.escape(site["name"])}" '
+       f'width="160" height="160" decoding="async">') if portrait else ""
+page = re.sub(r'(<div class="hero-portrait" data-portrait>).*?(</div>)', lambda m: m.group(1) + img + m.group(2), page, flags=re.S)
+
+# Obfuscated email: "user [at] domain [dot] tld" in the HTML, real address assembled in JS.
+if L.get("email"):
+    user, domain = L["email"].split("@", 1)
+    shown = f"{user} [at] {domain.replace('.', ' [dot] ')}"
+    attrs = f'data-u="{html.escape(user, quote=True)}" data-d="{html.escape(domain, quote=True)}"'
+    page = re.sub(r'<span data-render="email" data-email-obf[^>]*>.*?</span>',
+                  f'<span data-render="email" data-email-obf {attrs}>{html.escape(shown)}</span>', page, flags=re.S)
 
 (ROOT / "index.html").write_text(page)
 print("index.html synced from content/site.json")

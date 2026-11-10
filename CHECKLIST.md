@@ -3,8 +3,7 @@
 Open placeholders and TODOs. Updated at the end of every phase.
 
 ## Placeholders in content/site.json
-- [ ] life.intro, life.interests, life.places_lived, life.photos
-- [ ] contact.open_to
+- [ ] contact.open_to: drafted from the assistant's example, confirm wording
 
 ## Workflow
 - After editing content/site.json run `python3 tools/sync_static.py` to update the no-JS text in index.html
@@ -17,7 +16,7 @@ Open placeholders and TODOs. Updated at the end of every phase.
 - [ ] Decide: list "Efficient Text Classification with Conformal In-Context Learning" (submitted to LREC 2026) as a preprint?
 
 ## Files to add
-- [ ] Portrait photo (files.portrait, assets/img/)
+- [ ] Portrait: assets/img/portrait.jpg is 800x800, 116 KB; downscale to 320x320 in Phase 5 (no image tools on the cluster)
 - [ ] CV PDF (links.cv_pdf, assets/pdf/)
 
 ## Decisions to revisit
@@ -25,13 +24,13 @@ Open placeholders and TODOs. Updated at the end of every phase.
 - [ ] Fraunces: switch to Source Serif 4 if it feels like too much
 
 ## Verification pending
-- [ ] Visual check of Phase 2 header, toggle and hero in a browser (no browser on the cluster)
+- [ ] Visual check in a browser of header, hero, lists and contact (no browser on the cluster)
 
 ## Phase status
 - [x] Phase 0, discovery
 - [x] Phase 1, scaffold
 - [x] Phase 2, design system
-- [ ] Phase 3, sections (About, Publications, Experience, Education done; Life, Contact pending)
+- [x] Phase 3, sections (About, Publications, Experience, Education, Contact; Research and Life removed)
 - [ ] Phase 4, motion
 - [ ] Phase 5, polish
 - [ ] Phase 6, QA

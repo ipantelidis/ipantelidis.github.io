@@ -14,7 +14,6 @@
     "publications",
     "experience",
     "education",
-    "life",
     "contact"
   ],
   "links": {
@@ -25,7 +24,7 @@
     "linkedin": "https://www.linkedin.com/in/ippokratis-pantelidis/"
   },
   "files": {
-    "portrait": null,
+    "portrait": "portrait.jpg",
     "cv_pdf": null
   },
   "design": {
@@ -130,14 +129,9 @@
       "honours": null
     }
   ],
-  "life": {
-    "intro": "[LIFE_INTRO]",
-    "interests": [],
-    "places_lived": [],
-    "photos": []
-  },
   "contact": {
-    "open_to": "[OPEN_TO]"
+    "open_to": "Open to PhD positions starting 2027, research collaborations and talks.",
+    "open_to_note": "Drafted from the assistant's example; edit freely."
   },
   "footer": {
     "year": 2026,
